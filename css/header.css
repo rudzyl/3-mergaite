@@ -1,18 +1,13 @@
 .container{
-    display: inline-block;
     width: 100%;
 }
 .container .top {
-    display: inline-block;
     width: 100%;
 }
-header > img {
-    display: inline-block;
-    float: left;
-    height: 50px;
+.top > img {
+    height: 60px;
 }
-nav {
-    display: inline-block;
+.top > nav {
     float: right;
 }
     a {

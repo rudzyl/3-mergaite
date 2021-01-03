@@ -5,10 +5,20 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1200px 1fr;
-    padding: 100px 0;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    padding: 20px 0;
     gap: 30px;
 }
+.container > * {
+    grid-column: col-start / span 12;
+}
+    .top > img {
+        grid-column: 8 / 12;
+        grid-row: 3;
+    }
+    .top > nav {
+        grid-column: col-start / span 4;
+    }
 @media (max-width: 1000px) {
     .top {
         width: 800px;
